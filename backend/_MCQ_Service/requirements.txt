@@ -1,0 +1,13 @@
+# For robust text splitting (chunking)
+langchain
+
+# Google's SDK for the Gemini API
+google-generativeai
+
+# For loading environment variables from a .env file
+python-dotenv
+
+# Web framework for the API
+fastapi
+uvicorn[standard]
+
