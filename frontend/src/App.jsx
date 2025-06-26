@@ -1,9 +1,10 @@
 import React from 'react'
+import DragAndDrop from './components/DragAndDrop'
 
-const App = () => { 
+const App = () => {
   return (
     <div>
-      Mock Test
+      App
     </div>
   )
 }
