@@ -6,6 +6,7 @@ const connectDB = require("./config/db");
 
 // --- Import Routes ---
 const mcqRoutes = require("./routes/mcqRoutes");
+const authRoutes = require("./routes/authRoutes");
 
 // --- Connect to Database ---
 // We call this now to prepare for the authentication step.
@@ -23,8 +24,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // --- API Routes ---
-// Any request to /api/mcq will be handled by mcqRoutes
-app.use("/api/mcq", mcqRoutes);
+app.use("/api/mcq", mcqRoutes); // Any request to /api/mcq will be handled by mcqRoutes
+app.use("/api/auth", authRoutes); // Authentication routes for user registration and login
 
 // --- Simple Root Route for Health Check ---
 app.get("/", (req, res) => {

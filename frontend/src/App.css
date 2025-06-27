@@ -170,3 +170,27 @@ header p {
     font-size: 0.9rem;
     color: #3730a3;
 }
+
+/* Add to frontend/src/App.css */
+.header-content {
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logout-button {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.logout-button:hover {
+    background-color: #dc2626; }
